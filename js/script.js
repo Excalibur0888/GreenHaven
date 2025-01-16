@@ -1,13 +1,24 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Mobile menu
+    // Мобильное меню
     const navToggle = document.querySelector('.nav-toggle');
     const navLeft = document.querySelector('.nav-left');
     const navRight = document.querySelector('.nav-right');
-
-    navToggle?.addEventListener('click', () => {
+    
+    navToggle.addEventListener('click', () => {
+        navToggle.classList.toggle('active');
         navLeft.classList.toggle('active');
         navRight.classList.toggle('active');
-        navToggle.classList.toggle('active');
+        document.body.classList.toggle('nav-open');
+    });
+
+    // Закрываем меню при клике на ссылку
+    document.addEventListener('click', (e) => {
+        if (e.target.closest('.nav-link') && (navLeft.classList.contains('active') || navRight.classList.contains('active'))) {
+            navToggle.classList.remove('active');
+            navLeft.classList.remove('active');
+            navRight.classList.remove('active');
+            document.body.classList.remove('nav-open');
+        }
     });
 
     // Slider
