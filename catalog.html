@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenHaven Catalog - Browse Our Indoor Plants Collection</title>
+    <meta name="description" content="Explore our diverse collection of indoor plants. From air-purifying varieties to low-maintenance options, find the perfect plant for your space.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav-left">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="catalog.html" class="nav-link active">Catalog</a>
+            </nav>
+            <a href="index.html" class="logo">GreenHaven</a>
+            <nav class="nav-right">
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+            <button class="nav-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="catalog-hero">
+            <div class="container">
+                <div class="catalog-hero-content">
+                    <h1>Our Plant Collection</h1>
+                    <p>Discover the perfect plant to bring life to your space</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="catalog-grid">
+            <div class="container">
+                <!-- Filters Section -->
+                <div class="catalog-filters">
+                    <div class="filters-grid">
+                        <div class="filter-group">
+                            <label for="category">Category</label>
+                            <select name="category" id="category">
+                                <option value="">All Categories</option>
+                                <option value="air-purifying">Air Purifying</option>
+                                <option value="low-maintenance">Low Maintenance</option>
+                                <option value="pet-friendly">Pet Friendly</option>
+                                <option value="flowering">Flowering</option>
+                            </select>
+                        </div>
+
+                        <div class="filter-group">
+                            <label for="price">Price Range</label>
+                            <select name="price" id="price">
+                                <option value="">All Prices</option>
+                                <option value="under-500">Under ₹500</option>
+                                <option value="500-1000">₹500 - ₹1000</option>
+                                <option value="above-1000">Above ₹1000</option>
+                            </select>
+                        </div>
+
+                        <div class="filter-group">
+                            <label for="sort">Sort By</label>
+                            <select name="sort" id="sort">
+                                <option value="popular">Most Popular</option>
+                                <option value="price-low">Price: Low to High</option>
+                                <option value="price-high">Price: High to Low</option>
+                                <option value="newest">Newest First</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="products-grid" id="products-grid">
+                    <!-- Product Card 1 -->
+                    <div class="product-card" data-category="air-purifying" data-price="599">
+                        <div class="product-image">
+                            <img src="img/catalog1.jpg" alt="Snake Plant">
+                            <div class="product-tags">
+                                <span class="tag">Air Purifying</span>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Snake Plant</h3>
+                            <p>Perfect for beginners, excellent air purifier</p>
+                            <div class="product-meta">
+                                <span class="price">₹599</span>
+                                <a href="contact.html" class="btn btn-outline">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 2 -->
+                    <div class="product-card" data-category="air-purifying,flowering" data-price="699">
+                        <div class="product-image">
+                            <img src="img/catalog2.jpg" alt="Peace Lily">
+                            <div class="product-tags">
+                                <span class="tag">Air Purifying</span>
+                                <span class="tag">Flowering</span>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Peace Lily</h3>
+                            <p>Beautiful flowering plant with air-purifying qualities</p>
+                            <div class="product-meta">
+                                <span class="price">₹699</span>
+                                <a href="contact.html" class="btn btn-outline">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 3 -->
+                    <div class="product-card" data-category="low-maintenance" data-price="499">
+                        <div class="product-image">
+                            <img src="img/catalog3.jpg" alt="Money Plant">
+                            <div class="product-tags">
+                                <span class="tag">Low Maintenance</span>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Money Plant</h3>
+                            <p>Fast-growing vine with heart-shaped leaves</p>
+                            <div class="product-meta">
+                                <span class="price">₹499</span>
+                                <a href="contact.html" class="btn btn-outline">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 4 -->
+                    <div class="product-card" data-category="pet-friendly,low-maintenance" data-price="799">
+                        <div class="product-image">
+                            <img src="img/catalog4.jpg" alt="Boston Fern">
+                            <div class="product-tags">
+                                <span class="tag">Pet Friendly</span>
+                                <span class="tag">Low Maintenance</span>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Boston Fern</h3>
+                            <p>Safe for pets, adds tropical charm to any room</p>
+                            <div class="product-meta">
+                                <span class="price">₹799</span>
+                                <a href="contact.html" class="btn btn-outline">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 5 -->
+                    <div class="product-card" data-category="air-purifying" data-price="899">
+                        <div class="product-image">
+                            <img src="img/catalog5.jpg" alt="Spider Plant">
+                            <div class="product-tags">
+                                <span class="tag">Air Purifying</span>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Spider Plant</h3>
+                            <p>Easy to grow, produces baby plants</p>
+                            <div class="product-meta">
+                                <span class="price">₹899</span>
+                                <a href="contact.html" class="btn btn-outline">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 6 -->
+                    <div class="product-card" data-category="pet-friendly" data-price="1299">
+                        <div class="product-image">
+                            <img src="img/catalog6.jpg" alt="Parlor Palm">
+                            <div class="product-tags">
+                                <span class="tag">Pet Friendly</span>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Parlor Palm</h3>
+                            <p>Elegant palm that's safe for pets</p>
+                            <div class="product-meta">
+                                <span class="price">₹1299</span>
+                                <a href="contact.html" class="btn btn-outline">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 7 -->
+                    <div class="product-card" data-category="flowering" data-price="999">
+                        <div class="product-image">
+                            <img src="img/catalog7.jpg" alt="Anthurium">
+                            <div class="product-tags">
+                                <span class="tag">Flowering</span>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Anthurium</h3>
+                            <p>Stunning red flowers that bloom year-round</p>
+                            <div class="product-meta">
+                                <span class="price">₹999</span>
+                                <a href="contact.html" class="btn btn-outline">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 8 -->
+                    <div class="product-card" data-category="air-purifying,low-maintenance" data-price="1499">
+                        <div class="product-image">
+                            <img src="img/catalog8.jpg" alt="ZZ Plant">
+                            <div class="product-tags">
+                                <span class="tag">Air Purifying</span>
+                                <span class="tag">Low Maintenance</span>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>ZZ Plant</h3>
+                            <p>Thrives in low light, extremely hardy</p>
+                            <div class="product-meta">
+                                <span class="price">₹1499</span>
+                                <a href="contact.html" class="btn btn-outline">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 9 -->
+                    <div class="product-card" data-category="pet-friendly,flowering" data-price="1199">
+                        <div class="product-image">
+                            <img src="img/catalog9.jpg" alt="African Violet">
+                            <div class="product-tags">
+                                <span class="tag">Pet Friendly</span>
+                                <span class="tag">Flowering</span>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>African Violet</h3>
+                            <p>Compact flowering plant safe for pets</p>
+                            <div class="product-meta">
+                                <span class="price">₹1199</span>
+                                <a href="contact.html" class="btn btn-outline">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- No Results Message -->
+                <div id="no-results" class="no-results" style="display: none;">
+                    <p>No plants match your selected filters. Try adjusting your criteria.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">GreenHaven</a>
+                    <div class="footer-contact">
+                        <h4>Contact Us</h4>
+                        <div class="footer-contact-list">
+                            <div class="contact-item">
+                                <i>📍</i>
+                                <a href="https://maps.app.goo.gl/xHXfUvN7m8fywmsn8" target="_blank">
+                                    ZEST BUSINESS SPACES, Anjaria Wadi, Rajawadi Colony, Ghatkopar East, Mumbai, Maharashtra 400077
+                                </a>
+                            </div>
+                            <div class="contact-item">
+                                <i>📞</i>
+                                <a href="tel:+919876543210">+91 98765-43210</a>
+                            </div>
+                            <div class="contact-item">
+                                <i>✉️</i>
+                                <a href="mailto:greenhaven@gmail.com">greenhaven@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <nav class="footer-nav">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <nav class="footer-nav">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-conditions.html">Terms & Conditions</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">© 2024 GreenHaven. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/slider.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const productsGrid = document.getElementById('products-grid');
+            const noResults = document.getElementById('no-results');
+            const categorySelect = document.querySelector('select[name="category"]');
+            const priceSelect = document.querySelector('select[name="price"]');
+            const sortSelect = document.querySelector('select[name="sort"]');
+
+            // Сохраняем исходный порядок карточек
+            const originalOrder = Array.from(document.querySelectorAll('.product-card')).map(card => card.cloneNode(true));
+
+            function filterProducts() {
+                const selectedCategory = categorySelect.value;
+                const selectedPrice = priceSelect.value;
+                const selectedSort = sortSelect.value;
+
+                // Начинаем с копии оригинального массива
+                let visibleProducts = originalOrder.map(card => card.cloneNode(true));
+
+                // Фильтрация по категории
+                if (selectedCategory) {
+                    visibleProducts = visibleProducts.filter(product => {
+                        const categories = product.dataset.category.split(',');
+                        return categories.includes(selectedCategory);
+                    });
+                }
+
+                // Фильтрация по цене
+                if (selectedPrice) {
+                    visibleProducts = visibleProducts.filter(product => {
+                        const price = parseInt(product.dataset.price);
+                        switch(selectedPrice) {
+                            case 'under-500':
+                                return price < 500;
+                            case '500-1000':
+                                return price >= 500 && price <= 1000;
+                            case 'above-1000':
+                                return price > 1000;
+                            default:
+                                return true;
+                        }
+                    });
+                }
+
+                // Сортировка
+                visibleProducts.sort((a, b) => {
+                    const priceA = parseInt(a.dataset.price);
+                    const priceB = parseInt(b.dataset.price);
+                    
+                    switch(selectedSort) {
+                        case 'price-low':
+                            return priceA - priceB;
+                        case 'price-high':
+                            return priceB - priceA;
+                        case 'newest':
+                            return -1; // Новые первыми
+                        case 'popular':
+                        default:
+                            // Возвращаем к исходному порядку для популярных
+                            return originalOrder.indexOf(a) - originalOrder.indexOf(b);
+                    }
+                });
+
+                // Очищаем и обновляем сетку товаров
+                productsGrid.innerHTML = '';
+                visibleProducts.forEach(product => {
+                    productsGrid.appendChild(product);
+                });
+
+                // Показываем/скрываем сообщение об отсутствии результатов
+                noResults.style.display = visibleProducts.length === 0 ? 'block' : 'none';
+            }
+
+            // Добавляем слушатели событий
+            categorySelect.addEventListener('change', filterProducts);
+            priceSelect.addEventListener('change', filterProducts);
+            sortSelect.addEventListener('change', filterProducts);
+        });
+    </script>
+</body>
+</html> 
