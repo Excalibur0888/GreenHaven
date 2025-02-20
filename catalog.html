@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="icon" href="img/logo.png" type="image/x-icon">
-    <title>GreenHaven Catalog - Browse Our Indoor Plants Collection</title>
-    <meta name="description" content="Explore our diverse collection of indoor plants. From air-purifying varieties to low-maintenance options, find the perfect plant for your space.">
+    <title>GreenHaven Menu - Browse Our Delicious Food Collection</title>
+    <meta name="description" content="Explore our diverse menu of delicious dishes. From healthy options to comfort food, find the perfect meal for any occasion.">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header class="header">
         <div class="container">
             <nav class="nav-left">
-                <a href="index.html" class="nav-link">Home</a>
+                <a href="/" class="nav-link">Home</a>
                 <a href="catalog.html" class="nav-link active">Catalog</a>
-								<a href="care-guide.html" class="nav-link">Care Guide</a>
+								<a href="app/index.html" class="nav-link">App</a>
             </nav>
-            <a href="index.html" class="logo">GreenHaven</a>
+            <a href="/" class="logo">GreenHaven</a>
             <nav class="nav-right">
                 <a href="about.html" class="nav-link">About</a>
                 <a href="contact.html" class="nav-link">Contact</a>
@@ -33,8 +33,8 @@
         <section class="catalog-hero">
             <div class="container">
                 <div class="catalog-hero-content">
-                    <h1>Our Plant Collection</h1>
-                    <p>Discover the perfect plant to bring life to your space</p>
+                    <h1>Our Menu</h1>
+                    <p>Discover the perfect dish to satisfy your cravings</p>
                 </div>
             </div>
         </section>
@@ -48,10 +48,10 @@
                             <label for="category">Category</label>
                             <select name="category" id="category">
                                 <option value="">All Categories</option>
-                                <option value="air-purifying">Air Purifying</option>
-                                <option value="low-maintenance">Low Maintenance</option>
-                                <option value="pet-friendly">Pet Friendly</option>
-                                <option value="flowering">Flowering</option>
+                                <option value="indian">Indian</option>
+                                <option value="chinese">Chinese</option>
+                                <option value="continental">Continental</option>
+                                <option value="desserts">Desserts</option>
                             </select>
                         </div>
 
@@ -79,16 +79,16 @@
 
                 <div class="products-grid" id="products-grid">
                     <!-- Product Card 1 -->
-                    <div class="product-card" data-category="air-purifying" data-price="599">
+                    <div class="product-card" data-category="indian" data-price="599">
                         <div class="product-image">
-                            <img src="img/catalog1.jpg" alt="Snake Plant">
+                            <img src="img/catalog1.jpg" alt="Butter Chicken">
                             <div class="product-tags">
-                                <span class="tag">Air Purifying</span>
+                                <span class="tag">Indian</span>
                             </div>
                         </div>
                         <div class="product-info">
-                            <h3>Snake Plant</h3>
-                            <p>Perfect for beginners, excellent air purifier</p>
+                            <h3>Butter Chicken</h3>
+                            <p>Tender chicken in rich, creamy tomato sauce</p>
                             <div class="product-meta">
                                 <span class="price">₹599</span>
                                 <a href="contact.html" class="btn btn-outline">Order Now</a>
@@ -97,17 +97,16 @@
                     </div>
 
                     <!-- Product Card 2 -->
-                    <div class="product-card" data-category="air-purifying,flowering" data-price="699">
+                    <div class="product-card" data-category="chinese" data-price="699">
                         <div class="product-image">
-                            <img src="img/catalog2.jpg" alt="Peace Lily">
+                            <img src="img/catalog2.jpg" alt="Kung Pao Chicken">
                             <div class="product-tags">
-                                <span class="tag">Air Purifying</span>
-                                <span class="tag">Flowering</span>
+                                <span class="tag">Chinese</span>
                             </div>
                         </div>
                         <div class="product-info">
-                            <h3>Peace Lily</h3>
-                            <p>Beautiful flowering plant with air-purifying qualities</p>
+                            <h3>Kung Pao Chicken</h3>
+                            <p>Spicy diced chicken with peanuts and vegetables</p>
                             <div class="product-meta">
                                 <span class="price">₹699</span>
                                 <a href="contact.html" class="btn btn-outline">Order Now</a>
@@ -116,35 +115,16 @@
                     </div>
 
                     <!-- Product Card 3 -->
-                    <div class="product-card" data-category="low-maintenance" data-price="499">
+                    <div class="product-card" data-category="continental" data-price="799">
                         <div class="product-image">
-                            <img src="img/catalog3.jpg" alt="Money Plant">
+                            <img src="img/catalog3.jpg" alt="Classic Burger">
                             <div class="product-tags">
-                                <span class="tag">Low Maintenance</span>
+                                <span class="tag">Continental</span>
                             </div>
                         </div>
                         <div class="product-info">
-                            <h3>Money Plant</h3>
-                            <p>Fast-growing vine with heart-shaped leaves</p>
-                            <div class="product-meta">
-                                <span class="price">₹499</span>
-                                <a href="contact.html" class="btn btn-outline">Order Now</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Product Card 4 -->
-                    <div class="product-card" data-category="pet-friendly,low-maintenance" data-price="799">
-                        <div class="product-image">
-                            <img src="img/catalog4.jpg" alt="Boston Fern">
-                            <div class="product-tags">
-                                <span class="tag">Pet Friendly</span>
-                                <span class="tag">Low Maintenance</span>
-                            </div>
-                        </div>
-                        <div class="product-info">
-                            <h3>Boston Fern</h3>
-                            <p>Safe for pets, adds tropical charm to any room</p>
+                            <h3>Classic Burger</h3>
+                            <p>Juicy beef patty with fresh vegetables and special sauce</p>
                             <div class="product-meta">
                                 <span class="price">₹799</span>
                                 <a href="contact.html" class="btn btn-outline">Order Now</a>
@@ -152,17 +132,53 @@
                         </div>
                     </div>
 
-                    <!-- Product Card 5 -->
-                    <div class="product-card" data-category="air-purifying" data-price="899">
+                    <!-- Product Card 4 -->
+                    <div class="product-card" data-category="indian" data-price="549">
                         <div class="product-image">
-                            <img src="img/catalog5.jpg" alt="Spider Plant">
+                            <img src="img/catalog4.jpg" alt="Paneer Tikka">
                             <div class="product-tags">
-                                <span class="tag">Air Purifying</span>
+                                <span class="tag">Indian</span>
                             </div>
                         </div>
                         <div class="product-info">
-                            <h3>Spider Plant</h3>
-                            <p>Easy to grow, produces baby plants</p>
+                            <h3>Paneer Tikka</h3>
+                            <p>Grilled cottage cheese with aromatic spices</p>
+                            <div class="product-meta">
+                                <span class="price">₹549</span>
+                                <a href="contact.html" class="btn btn-outline">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 5 -->
+                    <div class="product-card" data-category="chinese" data-price="649">
+                        <div class="product-image">
+                            <img src="img/catalog5.jpg" alt="Dim Sum">
+                            <div class="product-tags">
+                                <span class="tag">Chinese</span>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Dim Sum Platter</h3>
+                            <p>Assorted steamed dumplings with dipping sauces</p>
+                            <div class="product-meta">
+                                <span class="price">₹649</span>
+                                <a href="contact.html" class="btn btn-outline">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 6 -->
+                    <div class="product-card" data-category="continental" data-price="899">
+                        <div class="product-image">
+                            <img src="img/catalog6.jpg" alt="Grilled Salmon">
+                            <div class="product-tags">
+                                <span class="tag">Continental</span>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Grilled Salmon</h3>
+                            <p>Fresh salmon with herbs and lemon butter sauce</p>
                             <div class="product-meta">
                                 <span class="price">₹899</span>
                                 <a href="contact.html" class="btn btn-outline">Order Now</a>
@@ -170,75 +186,55 @@
                         </div>
                     </div>
 
-                    <!-- Product Card 6 -->
-                    <div class="product-card" data-category="pet-friendly" data-price="1299">
-                        <div class="product-image">
-                            <img src="img/catalog6.jpg" alt="Parlor Palm">
-                            <div class="product-tags">
-                                <span class="tag">Pet Friendly</span>
-                            </div>
-                        </div>
-                        <div class="product-info">
-                            <h3>Parlor Palm</h3>
-                            <p>Elegant palm that's safe for pets</p>
-                            <div class="product-meta">
-                                <span class="price">₹1299</span>
-                                <a href="contact.html" class="btn btn-outline">Order Now</a>
-                            </div>
-                        </div>
-                    </div>
-
                     <!-- Product Card 7 -->
-                    <div class="product-card" data-category="flowering" data-price="999">
+                    <div class="product-card" data-category="desserts" data-price="399">
                         <div class="product-image">
-                            <img src="img/catalog7.jpg" alt="Anthurium">
+                            <img src="img/catalog7.jpg" alt="Chocolate Cake">
                             <div class="product-tags">
-                                <span class="tag">Flowering</span>
+                                <span class="tag">Desserts</span>
                             </div>
                         </div>
                         <div class="product-info">
-                            <h3>Anthurium</h3>
-                            <p>Stunning red flowers that bloom year-round</p>
+                            <h3>Chocolate Cake</h3>
+                            <p>Rich and moist chocolate cake with ganache</p>
                             <div class="product-meta">
-                                <span class="price">₹999</span>
+                                <span class="price">₹399</span>
                                 <a href="contact.html" class="btn btn-outline">Order Now</a>
                             </div>
                         </div>
                     </div>
 
                     <!-- Product Card 8 -->
-                    <div class="product-card" data-category="air-purifying,low-maintenance" data-price="1499">
+                    <div class="product-card" data-category="continental" data-price="749">
                         <div class="product-image">
-                            <img src="img/catalog8.jpg" alt="ZZ Plant">
+                            <img src="img/catalog8.jpg" alt="Pasta Alfredo">
                             <div class="product-tags">
-                                <span class="tag">Air Purifying</span>
-                                <span class="tag">Low Maintenance</span>
+                                <span class="tag">Continental</span>
                             </div>
                         </div>
                         <div class="product-info">
-                            <h3>ZZ Plant</h3>
-                            <p>Thrives in low light, extremely hardy</p>
+                            <h3>Pasta Alfredo</h3>
+                            <p>Creamy pasta with parmesan and garlic sauce</p>
                             <div class="product-meta">
-                                <span class="price">₹1499</span>
+                                <span class="price">₹749</span>
                                 <a href="contact.html" class="btn btn-outline">Order Now</a>
                             </div>
                         </div>
                     </div>
 
                     <!-- Product Card 9 -->
-                    <div class="product-card" data-category="pet-friendly,flowering" data-price="1199">
+                    <div class="product-card" data-category="desserts" data-price="299">
                         <div class="product-image">
-                            <img src="img/catalog9.jpg" alt="African Violet">
+                            <img src="img/catalog9.jpg" alt="Fruit Tart">
                             <div class="product-tags">
-                                <span class="tag">Pet Friendly</span>
-                                <span class="tag">Flowering</span>
+                                <span class="tag">Desserts</span>
                             </div>
                         </div>
                         <div class="product-info">
-                            <h3>African Violet</h3>
-                            <p>Compact flowering plant safe for pets</p>
+                            <h3>Fruit Tart</h3>
+                            <p>Buttery pastry filled with custard and fresh fruits</p>
                             <div class="product-meta">
-                                <span class="price">₹1199</span>
+                                <span class="price">₹299</span>
                                 <a href="contact.html" class="btn btn-outline">Order Now</a>
                             </div>
                         </div>
@@ -247,7 +243,333 @@
 
                 <!-- No Results Message -->
                 <div id="no-results" class="no-results" style="display: none;">
-                    <p>No plants match your selected filters. Try adjusting your criteria.</p>
+                    <p>No dishes match your selected filters. Try adjusting your criteria.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Healthy Options Section -->
+        <section class="meal-categories">
+            <div class="container">
+                <h2>Healthy Options</h2>
+                <p>Nutritious and delicious meals for a balanced lifestyle</p>
+                <div class="products-grid">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="img/quinoa-bowl.jpg" alt="Quinoa Buddha Bowl">
+                            <div class="product-tags">
+                                <span class="tag">Vegan</span>
+                                <span class="tag">High Protein</span>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Quinoa Buddha Bowl</h3>
+                            <p>Fresh vegetables, quinoa, and tahini dressing</p>
+                            <div class="product-meta">
+                                <span class="price">₹449</span>
+                                <a href="contact.html" class="btn btn-outline">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="img/chicken-bowl.jpg" alt="Grilled Chicken Bowl">
+                            <div class="product-tags">
+                                <span class="tag">High Protein</span>
+                                <span class="tag">Low Fat</span>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Grilled Chicken Bowl</h3>
+                            <p>Marinated chicken breast with quinoa and roasted vegetables</p>
+                            <div class="product-meta">
+                                <span class="price">₹499</span>
+                                <a href="contact.html" class="btn btn-outline">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="img/mediterranean-salad.jpg" alt="Mediterranean Salad">
+                            <div class="product-tags">
+                                <span class="tag">Fresh</span>
+                                <span class="tag">Gluten-Free</span>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Mediterranean Salad</h3>
+                            <p>Mixed greens, feta, olives, and balsamic dressing</p>
+                            <div class="product-meta">
+                                <span class="price">₹399</span>
+                                <a href="contact.html" class="btn btn-outline">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Bites Section -->
+        <section class="meal-categories">
+            <div class="container">
+                <h2>Quick Bites</h2>
+                <p>Perfect for a quick and satisfying meal</p>
+                <div class="products-grid">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="img/sandwich.jpg" alt="Club Sandwich">
+                            <div class="product-tags">
+                                <span class="tag">Bestseller</span>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Club Sandwich</h3>
+                            <p>Triple-decker with chicken, bacon, and avocado</p>
+                            <div class="product-meta">
+                                <span class="price">₹349</span>
+                                <a href="contact.html" class="btn btn-outline">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="img/wrap.jpg" alt="Falafel Wrap">
+                            <div class="product-tags">
+                                <span class="tag">Vegetarian</span>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Falafel Wrap</h3>
+                            <p>With hummus, vegetables, and tahini sauce</p>
+                            <div class="product-meta">
+                                <span class="price">₹299</span>
+                                <a href="contact.html" class="btn btn-outline">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="img/pasta.jpg" alt="Pesto Pasta">
+                            <div class="product-tags">
+                                <span class="tag">Quick Prep</span>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Pesto Pasta</h3>
+                            <p>Fresh basil pesto with cherry tomatoes</p>
+                            <div class="product-meta">
+                                <span class="price">₹379</span>
+                                <a href="contact.html" class="btn btn-outline">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Family Meals Section -->
+        <section class="meal-categories">
+            <div class="container">
+                <h2>Family Meals</h2>
+                <p>Generous portions perfect for sharing with loved ones</p>
+                <div class="products-grid">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="img/biryani-platter.jpg" alt="Family Biryani Platter">
+                            <div class="product-tags">
+                                <span class="tag">Serves 4-6</span>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Family Biryani Platter</h3>
+                            <p>Mixed biryani with raita and salan</p>
+                            <div class="product-meta">
+                                <span class="price">₹999</span>
+                                <a href="contact.html" class="btn btn-outline">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="img/pizza-combo.jpg" alt="Pizza Family Combo">
+                            <div class="product-tags">
+                                <span class="tag">Value Pack</span>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Pizza Family Combo</h3>
+                            <p>2 large pizzas with sides and drinks</p>
+                            <div class="product-meta">
+                                <span class="price">₹1299</span>
+                                <a href="contact.html" class="btn btn-outline">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="img/chinese-feast.jpg" alt="Chinese Feast">
+                            <div class="product-tags">
+                                <span class="tag">Family Pack</span>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Chinese Feast</h3>
+                            <p>Noodles, rice, and assorted main courses</p>
+                            <div class="product-meta">
+                                <span class="price">₹1199</span>
+                                <a href="contact.html" class="btn btn-outline">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="popular-dishes">
+            <div class="container">
+                <h2>Most Popular</h2>
+                <p>Customer favorites that keep them coming back for more</p>
+                <div class="products-grid">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="img/butter-chicken.jpg" alt="Butter Chicken">
+                            <div class="product-tags">
+                                <span class="tag bestseller">Bestseller</span>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Butter Chicken</h3>
+                            <p>Tender chicken in rich, creamy tomato sauce</p>
+                            <div class="product-meta">
+                                <span class="price">₹399</span>
+                                <button class="btn">Order Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="img/dal-makhani.jpg" alt="Dal Makhani">
+                            <div class="product-tags">
+                                <span class="tag vegetarian">Vegetarian</span>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Dal Makhani</h3>
+                            <p>Creamy black lentils simmered overnight</p>
+                            <div class="product-meta">
+                                <span class="price">₹299</span>
+                                <button class="btn">Order Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="img/biryani.jpg" alt="Hyderabadi Biryani">
+                            <div class="product-tags">
+                                <span class="tag spicy">Spicy</span>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Hyderabadi Biryani</h3>
+                            <p>Aromatic rice with tender meat and spices</p>
+                            <div class="product-meta">
+                                <span class="price">₹449</span>
+                                <button class="btn">Order Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="special-offers">
+            <div class="container">
+                <h2>Special Offers</h2>
+                <p>Limited time deals you don't want to miss</p>
+                <div class="offers-grid">
+                    <div class="offer-card">
+                        <img src="img/family-feast.jpg" alt="Family Feast">
+                        <div class="offer-content">
+                            <h3>Family Feast</h3>
+                            <p>Perfect for 4-6 people. Includes main course, sides, and dessert.</p>
+                            <div class="offer-price">
+                                <span class="original-price">₹2499</span>
+                                <span class="discounted-price">₹1999</span>
+                            </div>
+                            <button class="btn">Order Now</button>
+                        </div>
+                    </div>
+                    <div class="offer-card">
+                        <img src="img/healthy-box.jpg" alt="Healthy Box">
+                        <div class="offer-content">
+                            <h3>Healthy Box</h3>
+                            <p>Nutritious meals under 500 calories. Perfect for health conscious.</p>
+                            <div class="offer-price">
+                                <span class="original-price">₹599</span>
+                                <span class="discounted-price">₹499</span>
+                            </div>
+                            <button class="btn">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="meal-categories">
+            <div class="container">
+                <h2>Browse by Category</h2>
+                <p>Find exactly what you're craving</p>
+                <div class="categories-grid">
+                    <div class="category-card" data-bg-image="img/indian.jpg">
+                        <div class="category-content">
+                            <h3>Indian</h3>
+                            <p>150+ items</p>
+                            <a href="catalog.html?category=indian" class="btn">View All</a>
+                        </div>
+                    </div>
+                    <div class="category-card" data-bg-image="img/chinese.jpg">
+                        <div class="category-content">
+                            <h3>Chinese</h3>
+                            <p>100+ items</p>
+                            <a href="catalog.html?category=chinese" class="btn">View All</a>
+                        </div>
+                    </div>
+                    <div class="category-card" data-bg-image="img/continental.jpg">
+                        <div class="category-content">
+                            <h3>Continental</h3>
+                            <p>80+ items</p>
+                            <a href="catalog.html?category=continental" class="btn">View All</a>
+                        </div>
+                    </div>
+                    <div class="category-card" data-bg-image="img/desserts.jpg">
+                        <div class="category-content">
+                            <h3>Desserts</h3>
+                            <p>50+ items</p>
+                            <a href="catalog.html?category=desserts" class="btn">View All</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="delivery-info">
+            <div class="container">
+                <div class="info-grid">
+                    <div class="info-card">
+                        <img src="img/icons/delivery.svg" alt="Fast Delivery">
+                        <h3>Express Delivery</h3>
+                        <p>Hot food delivered within 45 minutes</p>
+                    </div>
+                    <div class="info-card">
+                        <img src="img/icons/fresh.svg" alt="Fresh Food">
+                        <h3>Fresh & Hot</h3>
+                        <p>Prepared fresh upon order</p>
+                    </div>
+                    <div class="info-card">
+                        <img src="img/icons/quality-assurance.svg" alt="Quality Assured">
+                        <h3>Quality Assured</h3>
+                        <p>100% satisfaction guaranteed</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -257,7 +579,7 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
-                    <a href="index.html" class="logo">GreenHaven</a>
+                    <a href="/" class="logo">GreenHaven</a>
                     <div class="footer-contact">
                         <h4>Contact Us</h4>
                         <div class="footer-contact-list">
@@ -273,7 +595,7 @@
                             </div>
                             <div class="contact-item">
                                 <i>✉️</i>
-                                <a href="mailto:greenhaven@gmail.com">greenhaven@gmail.com</a>
+                                <a href="mailto:contact@greenhaven.com">contact@greenhaven.com</a>
                             </div>
                         </div>
                     </div>
@@ -281,9 +603,9 @@
                 <nav class="footer-nav">
                     <h4>Quick Links</h4>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
+                        <li><a href="/">Home</a></li>
                         <li><a href="catalog.html">Catalog</a></li>
-                        <li><a href="care-guide.html">Care Guide</a></li>
+                        <li><a href="app/index.html">App</a></li>
                         <li><a href="about.html">About Us</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
@@ -302,85 +624,7 @@
         </div>
     </footer>
 
-    <script src="js/slider.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const productsGrid = document.getElementById('products-grid');
-            const noResults = document.getElementById('no-results');
-            const categorySelect = document.querySelector('select[name="category"]');
-            const priceSelect = document.querySelector('select[name="price"]');
-            const sortSelect = document.querySelector('select[name="sort"]');
-
-            // Сохраняем исходный порядок карточек
-            const originalOrder = Array.from(document.querySelectorAll('.product-card')).map(card => card.cloneNode(true));
-
-            function filterProducts() {
-                const selectedCategory = categorySelect.value;
-                const selectedPrice = priceSelect.value;
-                const selectedSort = sortSelect.value;
-
-                // Начинаем с копии оригинального массива
-                let visibleProducts = originalOrder.map(card => card.cloneNode(true));
-
-                // Фильтрация по категории
-                if (selectedCategory) {
-                    visibleProducts = visibleProducts.filter(product => {
-                        const categories = product.dataset.category.split(',');
-                        return categories.includes(selectedCategory);
-                    });
-                }
-
-                // Фильтрация по цене
-                if (selectedPrice) {
-                    visibleProducts = visibleProducts.filter(product => {
-                        const price = parseInt(product.dataset.price);
-                        switch(selectedPrice) {
-                            case 'under-500':
-                                return price < 500;
-                            case '500-1000':
-                                return price >= 500 && price <= 1000;
-                            case 'above-1000':
-                                return price > 1000;
-                            default:
-                                return true;
-                        }
-                    });
-                }
-
-                // Сортировка
-                visibleProducts.sort((a, b) => {
-                    const priceA = parseInt(a.dataset.price);
-                    const priceB = parseInt(b.dataset.price);
-                    
-                    switch(selectedSort) {
-                        case 'price-low':
-                            return priceA - priceB;
-                        case 'price-high':
-                            return priceB - priceA;
-                        case 'newest':
-                            return -1; // Новые первыми
-                        case 'popular':
-                        default:
-                            // Возвращаем к исходному порядку для популярных
-                            return originalOrder.indexOf(a) - originalOrder.indexOf(b);
-                    }
-                });
-
-                // Очищаем и обновляем сетку товаров
-                productsGrid.innerHTML = '';
-                visibleProducts.forEach(product => {
-                    productsGrid.appendChild(product);
-                });
-
-                // Показываем/скрываем сообщение об отсутствии результатов
-                noResults.style.display = visibleProducts.length === 0 ? 'block' : 'none';
-            }
-
-            // Добавляем слушатели событий
-            categorySelect.addEventListener('change', filterProducts);
-            priceSelect.addEventListener('change', filterProducts);
-            sortSelect.addEventListener('change', filterProducts);
-        });
-    </script>
+    
+    <script src="js/script.js"></script>
 </body>
 </html> 

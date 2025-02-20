@@ -1,15 +1,19 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = $_POST["name"];
     $email = $_POST["email"];
-	$to = "support@" . $_SERVER['HTTP_HOST'];
-    $subject = "New Contact Form Submission";
-    $body = "Name: $name\n";
-    $body .= "Email: $email\n";
-    $body .= "Tel:\n$tel";
-    $headers = "From: $to \r\n";
+    $privacy = isset($_POST["privacy"]) ? "Yes" : "No";
+    
+    $to = "contact@greenhaven.com";
+    $subject = "Newsletter Subscription";
+    $body = "New subscriber details:\n\n";
+    $body .= "Email: " . $email . "\n";
+    $body .= "Privacy Policy Accepted: " . $privacy . "\n";
+    $headers = "From: " . $to . "\r\n";
+    $headers .= "Reply-To: " . $email . "\r\n";
+    $headers .= "X-Mailer: PHP/" . phpversion();
+    
     mail($to, $subject, $body, $headers);
-    // Redirect to thank you page
+    
     header("Location: thanks.html");
     exit();
 }
